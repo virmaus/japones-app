@@ -1,0 +1,13 @@
+<button type="button" (click)="setHabilitar()" class="btn btn-primary my-3">{{ habilitar==true? 'Ocultar': 'Mostrar'}}</button>
+<div class="card">
+    <div class="card-header" *ngIf="habilitar == true">
+       <h1> Palabras Japonesas</h1>
+   
+        <div *ngFor="let tabla of japaneseWord" >
+            <div>
+                <h2> {{ tabla.japanWord}}</h2>
+                <span> {{ tabla.pronounce}}</span>
+            </div>
+        </div>
+    </div>
+</div>

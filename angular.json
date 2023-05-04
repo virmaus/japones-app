@@ -23,11 +23,17 @@
             "assets": [
               "src/favicon.ico",
               "src/assets"
+
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/assets/css/bootstrap.min.css",
+              "node_modules/sweetalert2/dist/sweetalert2.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/js/bootstrap.bundle.min.js",
+              "src/assets/js/popper.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -87,12 +93,20 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/assets/css/bootstrap.min.css",
+              "node_modules/sweetalert2/dist/sweetalert2.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/js/popper.min.js",
+              "src/assets/js/bootstrap.bundle.min.js"
+            ]
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }
